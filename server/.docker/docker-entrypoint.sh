@@ -13,12 +13,12 @@ echo "DB_PASSWORD=$DB_PASSWORD"
 echo "above"
 
 # Wait for MySQL to be ready
-echo "Waiting for MySQL connection..."
-while ! mysqladmin ping -h"$DB_HOST" -u"$DB_USERNAME" -p"$DB_PASSWORD" --port "$DB_PORT" --silent 2>/dev/null; do
-    echo "Retrying MySQL connection in 2 seconds..."
-    sleep 2
-done
-echo "✓ MySQL is ready!"
+# echo "Waiting for MySQL connection..."
+# while ! mysqladmin ping -h"$DB_HOST" -u"$DB_USERNAME" -p"$DB_PASSWORD" --port "$DB_PORT" --silent 2>/dev/null; do
+#     echo "Retrying MySQL connection in 2 seconds..."
+#     sleep 2
+# done
+# echo "✓ MySQL is ready!"
 
 # # Create database if it doesn't exist
 # echo "Ensuring database exists..."
